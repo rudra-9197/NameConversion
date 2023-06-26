@@ -41,7 +41,7 @@ function pascalCase(str){
 function SnakeCase(str){
 let snake =""
     
-  let newarr = str.split(/\s/g);
+  let newarr = str.split(/\s|\W/g);
   console.log(newarr);
 
   newarr.forEach(element => {
@@ -60,7 +60,7 @@ function screamSnakeCase(str){
 
     let snake =""
     
-    let newarr = str.split(/\s/g);
+    let newarr = str.split(/\s|\W/g);
     console.log(newarr);
   
     newarr.forEach(element => {
@@ -78,7 +78,7 @@ function kebabCase(str){
 
     let snake =""
     
-    let newarr = str.split(/\s/g);
+    let newarr = str.split(/\s|\W/g);
     console.log(newarr);
   
     newarr.forEach(element => {
@@ -97,7 +97,7 @@ function screamKebabCase(str){
 
     let snake =""
     
-    let newarr = str.split(/\s/g);
+    let newarr = str.split(/\s|\W/g);
     console.log(newarr);
   
     newarr.forEach(element => {
